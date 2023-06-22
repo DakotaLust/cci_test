@@ -17,7 +17,7 @@ workflows:
   my-workflow:
     triggers:
       - schedule:
-          cron: '* * * * * '
+          cron: '* * * * *'
           filters:
             branches:
               only:
