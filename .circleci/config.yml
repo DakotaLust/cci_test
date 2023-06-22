@@ -12,20 +12,16 @@ jobs:
     steps:
       - checkout
       - run: echo "Hello World!"
-      - when:
-          condition:
-            and: 
-              - not: << pipeline.parameters.falsy-param >>
-            # Add condition to execute this step when the github branch is equal to 'main'
-          steps:
-            - run: echo "Running AND NOT false"
-      - when:
-          condition:
-            not: << pipeline.parameters.falsy-param >>
-          steps:
-            - run: echo "Running not false"
 
 workflows:
   my-workflow:
+    triggers:
+      - schedule:
+          cron: '* * * * * '
+          filters:
+            branches:
+              only:
+                - main
+
     jobs:
       - my-job
