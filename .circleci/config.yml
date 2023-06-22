@@ -15,13 +15,5 @@ jobs:
 
 workflows:
   my-workflow:
-    triggers:
-      - schedule:
-          cron: '* * * * * '
-          filters:
-            branches:
-              only:
-                - main
-
     jobs:
       - my-job
