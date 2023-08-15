@@ -11,8 +11,8 @@ jobs:
       - image: cimg/base:2022.03
     steps:
       - checkout
-      - run: echo "Hello World!"
-      - run: echo $?
+      - run: npm install
+      - run: npm test
 
 workflows:
   my-workflow:
