@@ -8,6 +8,7 @@ jobs:
       - checkout
       - run: npm install jest
       - run: cat package.json
+      - run: jest --coverage
 
 workflows:
   my-workflow:
