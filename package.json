@@ -3,6 +3,6 @@
     "jest": "^29.6.2"
   },
   "scripts": {
-    "test": "jest --verbose --runInBand --coverage --clearMocks --detectOpenHandles && jest"
+    "test": "jest --verbose --runInBand --coverage --clearMocks --detectOpenHandles && jest --coverage"
   }
 }
