@@ -1,0 +1,1 @@
+test('this suite should fail')
