@@ -1,14 +1,9 @@
 version: 2.1
 
-parameters:
-  falsy-param:
-    type: boolean
-    default: false
-
 jobs:
   my-job:
     docker:
-      - image: cimg/base:2022.03
+      - image: cimg/node:20.5.1
     steps:
       - checkout
       - run: npm install
