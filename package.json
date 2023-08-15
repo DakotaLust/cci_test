@@ -3,6 +3,6 @@
     "jest": "^29.6.2"
   },
   "scripts": {
-    "test:ci": "NODE_ENV=test node --no-compilation-cache ./node_modules/jest/bin/jest ./tests --ci --verbose --runInBand --coverage --clearMocks --detectOpenHandles"
+    "test": "jest --verbose --runInBand --coverage --clearMocks --detectOpenHandles "
   }
 }
