@@ -6,9 +6,10 @@ jobs:
       - image: cimg/node:20.5.1
     steps:
       - checkout
-      - run: npm install jest
+      - run: npm install
       - run: cat package.json
       - run: pwd && ls
+      - run: npm run test:ci
 
 workflows:
   my-workflow:
