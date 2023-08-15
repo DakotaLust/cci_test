@@ -3,6 +3,6 @@
     "jest": "^27.5.1"
   },
   "scripts": {
-    "test": "jest --verbose --runInBand --coverage --clearMocks --detectOpenHandles && jest --coverage || true"
+    "test": "jest --verbose --runInBand --coverage --clearMocks --detectOpenHandles && jest --coverage && true"
   }
 }
