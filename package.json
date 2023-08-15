@@ -3,6 +3,6 @@
     "jest": "^29.6.2"
   },
   "scripts": {
-    "test:ci": "jest --ci --runInBand --coverage --logHeapUsage --silent"
+    "test:ci": "jest --ci --runInBand --coverage --silent"
   }
 }
