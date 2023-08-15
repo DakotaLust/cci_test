@@ -11,7 +11,7 @@ jobs:
       - run: pwd && ls
       - run: |
           set -e
-          npm run test:ci --maxsockets 1
+          npm run test --maxsockets 1
 
 workflows:
   my-workflow:
