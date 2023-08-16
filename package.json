@@ -3,6 +3,6 @@
     "jest": "^27.5.1"
   },
   "scripts": {
-    "test": "NODE_ENV=test node --expose-gc --no-compilation-cache ./node_modules/jest/bin/jest ./tests --silent --testTimeout=30000--no-cache --runInBand --logHeapUsage --detectOpenHandles --coverage"
+    "test": "NODE_ENV=test node --expose-gc --no-compilation-cache ./node_modules/jest/bin/jest ./tests ./tests2 --silent --testTimeout=30000--no-cache --runInBand --logHeapUsage --detectOpenHandles --coverage"
   }
 }
