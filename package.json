@@ -3,6 +3,6 @@
     "jest": "^27.5.1"
   },
   "scripts": {
-    "test": "jest --verbose --runInBand --bail=1 --clearMocks --detectOpenHandles --forceExit && jest --coverage && true"
+    "test": "NODE_ENV=test node --expose-gc --no-compilation-cache ./node_modules/jest/bin/jest ./tests --runInBand --logHeapUsage --detectOpenHandles --coverage"
   }
 }
