@@ -5,6 +5,6 @@
   "scripts": {
     "allTests": "npm run test && npm run test2",
     "test": "NODE_ENV=test node --expose-gc --no-compilation-cache ./node_modules/jest/bin/jest ./tests --bail=1 --testTimeout=30000 --no-cache --runInBand --logHeapUsage --detectOpenHandles --coverage",
-    "test2": "NODE_ENV=test node --expose-gc --no-compilation-cache ./node_modules/jest/bin/jest ./tests2 --bail=1 --testTimeout=30000 --no-cache --runInBand --detectOpenHandles --coverage"
+    "test2": "NODE_ENV=test node --expose-gc --no-compilation-cache ./node_modules/jest/bin/jest ./other --bail=1 --testTimeout=30000 --no-cache --runInBand --detectOpenHandles --coverage"
   }
 }
