@@ -6,7 +6,7 @@ orbs:
 jobs:
   my-job:
     executor: 
-        name: win/default
+        name: windows/default
     steps:
       - checkout
       - run: git --version
