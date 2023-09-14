@@ -1,16 +1,11 @@
 version: 2.1
 
-orbs:
-  win: circleci/windows@5.0.0
-
 jobs:
   my-job:
     executor: 
-        name: windows/default
+        name: ubuntu-executor
     steps:
       - checkout
-      - run: git --version
-      - run: choco install git
       - run: git --version
 
 workflows:
