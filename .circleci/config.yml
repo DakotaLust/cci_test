@@ -3,7 +3,7 @@ version: 2.1
 jobs:
   my-job:
     executor: 
-        name: windows/default
+        name: win/default
     steps:
       - checkout
       - run: git --version
