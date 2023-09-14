@@ -1,5 +1,10 @@
 version: 2.1
 
+executors:
+  ubuntu-executor:
+    machine:
+      image: ubuntu-2204:2023.07.2
+
 jobs:
   my-job:
     executor: 
