@@ -12,6 +12,7 @@ jobs:
     steps:
       - checkout
       - run: git --version
+      - run: bash echo "this is working!"
 
 workflows:
   my-workflow:
