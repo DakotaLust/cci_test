@@ -12,7 +12,7 @@ jobs:
     steps:
       - checkout
       - run: |
-          git --version
+          git --version \
           bash ~/project/.circleci/scripts/bash.sh
 
 workflows:
