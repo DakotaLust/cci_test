@@ -11,8 +11,9 @@ jobs:
         name: ubuntu-executor
     steps:
       - checkout
-      - run: git --version
-      - run: bash ~/project/.circleci/scripts/bash.sh
+      - run: |
+          git --version
+          bash ~/project/.circleci/scripts/bash.sh
 
 workflows:
   my-workflow:
