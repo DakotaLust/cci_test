@@ -21,7 +21,7 @@ jobs:
           git --version
           bash ~/project/.circleci/scripts/bash.sh
           AWS_REGION=<< pipeline.parameters.example >>
-      - run: echo $AWS_REGION
+      - run: echo ${AWS_REGION}
 
 workflows:
   my-workflow:
