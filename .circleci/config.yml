@@ -1,5 +1,10 @@
 version: 2.1
 
+parameters:
+  example:
+    default: "eu-west-1"
+    type: string
+
 executors:
   ubuntu-executor:
     machine:
@@ -12,8 +17,9 @@ jobs:
     steps:
       - checkout
       - run: |
-          git --version \
+          git --version
           bash ~/project/.circleci/scripts/bash.sh
+          AWS_REGION=<< pipeline.parameter.example >>
 
 workflows:
   my-workflow:
