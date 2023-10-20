@@ -23,6 +23,7 @@ jobs:
           git --version
           bash ~/project/.circleci/scripts/bash.sh
       - run: echo $AWS_REGION
+      - run: echo $EXAMPLE_ENV
 
 workflows:
   my-workflow:
