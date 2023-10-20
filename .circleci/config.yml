@@ -15,13 +15,14 @@ jobs:
   my-job:
     executor: 
         name: ubuntu-executor
+    environment:
+      AWS_REGION: << pipeline.parameters.example >>
     steps:
       - checkout
       - run: |
           git --version
           bash ~/project/.circleci/scripts/bash.sh
-          AWS_REGION=<< pipeline.parameters.example >>
-      - run: echo ${AWS_REGION}
+      - run: echo $AWS_REGION
 
 workflows:
   my-workflow:
