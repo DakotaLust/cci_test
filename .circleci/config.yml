@@ -2,6 +2,7 @@ version: 2.1
 
 parameters:
   example:
+    description: AWS REGION
     default: "eu-west-1"
     type: string
 
